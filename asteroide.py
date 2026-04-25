@@ -12,4 +12,5 @@ data_frame_aste = response.json()
 
 for date, asteroids in data_frame_aste["near_earth_objects"].items():
     for asteroid in asteroids:
-        print(f"- {asteroid['name']}:")
+        print(f" - {asteroid['name']}: \n")
+        print(f" - {asteroid['is_potentially_hazardous_asteroid']}")

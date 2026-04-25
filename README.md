@@ -1,4 +1,4 @@
-<img src="img/asteroids_in_orbit.gif" align="center" alt="Descrição da imagem para acessibilidade" width="700" height="300">
+<img  align="center" src="img/asteroids_in_orbit.gif"  alt="Descrição da imagem para acessibilidade">
 <h1 align="center"> 🚀 Asteroides proximos a o planeta terra </h1>
 
 > 🌌 Explore dados reais sobre asteroides e objetos próximos da Terra em tempo real.
@@ -32,7 +32,7 @@ Ideal para:
 - ⚡ Dados atualizados diretamente de observações astronômicas  
 
 ---
-{
+```json
   "near_earth_objects": {
     "2026-04-25": [
       {
@@ -48,3 +48,6 @@ Ideal para:
     ]
   }
 }
+```
+
+

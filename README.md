@@ -1,4 +1,4 @@
-<img src="img/asteroids_in_orbit.gif" alt="Descrição da imagem para acessibilidade" width="600" height="300">
+<img src="img/asteroids_in_orbit.gif" align="center" alt="Descrição da imagem para acessibilidade" width="700" height="300">
 <h1 align="center"> 🚀 Asteroides proximos a o planeta terra </h1>
 
 > 🌌 Explore dados reais sobre asteroides e objetos próximos da Terra em tempo real.
@@ -32,7 +32,19 @@ Ideal para:
 - ⚡ Dados atualizados diretamente de observações astronômicas  
 
 ---
-
-## 🧱 Estrutura da API
-
-### 📡 Endpoint Base
+{
+  "near_earth_objects": {
+    "2026-04-25": [
+      {
+        "name": "Asteroid 2026 AB",
+        "is_potentially_hazardous_asteroid": false,
+        "estimated_diameter": {
+          "meters": {
+            "estimated_diameter_min": 120,
+            "estimated_diameter_max": 300
+          }
+        }
+      }
+    ]
+  }
+}

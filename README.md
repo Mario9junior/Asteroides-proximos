@@ -1,5 +1,8 @@
-<img  align="center" src="img/asteroids_in_orbit.gif"  alt="Descrição da imagem para acessibilidade">
-<h1 align="center"> 🚀 Asteroides proximos a o planeta terra </h1>
+<div style="text-align: center;">
+   <img  src="img/asteroids_in_orbit.gif" alt="Descrição da imagem para acessibilidade"/>
+   <h1 align="center"> 🚀 Asteroides proximos a o planeta terra </h1>
+</div>
+
 
 > 🌌 Explore dados reais sobre asteroides e objetos próximos da Terra em tempo real.
 

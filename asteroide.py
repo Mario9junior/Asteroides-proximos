@@ -1,6 +1,8 @@
 
 import requests
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt 
 
 key_url = "1VMOiac1Qv0903cFqKB2xiID5zRmmZvl0sX4PJY9"
 data_from = "2020-09-01"
@@ -31,6 +33,9 @@ dados = {
     'corpo orbitando': corpo_orbitando
  }
 df = pd.DataFrame(dados)
-print(df)
-
-           
+# criando gráfico de barras para asteroides potencialmente perigosos
+sns.countplot(x='potencialmente perigoso', data=df)
+plt.title('Quantidade de Asteroides Potencialmente Perigosos')
+plt.xlabel('Potencialmente Perigoso')
+plt.ylabel('Quantidade')
+plt.show()

@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 
 key_url = "1VMOiac1Qv0903cFqKB2xiID5zRmmZvl0sX4PJY9"
-data_from = "2020-09-07"
+data_from = "2020-09-01"
 date_to = "2020-09-08"
 url = f"https://api.nasa.gov/neo/rest/v1/feed?start_date={data_from}&end_date={date_to}&api_key={key_url}"
 
@@ -25,7 +25,6 @@ for date,objeto_planet in data_frame_aste['near_earth_objects'].items():
              corpo_orbitando.append(close_approach['orbiting_body'])
 
 # criando data set com os dados coletados
- 
 dados = {
     'nome do asteroide': nome_asteroide,
     'potencialmente perigoso': potencialmente_perigoso,

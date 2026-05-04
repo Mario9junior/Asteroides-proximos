@@ -36,7 +36,7 @@ temos como objetivo analisar quantitativamente e qualitativamente a relação en
 Os dados utilizados são inspirados no sistema oficial da NASA para monitoramento de objetos próximos da Terra, com foco em análise estatística, interpretação de risco e implicações para defesa planetária.
 
 <p align="center">
-  <img  src="img/figure_1.png" alt="Descrição da imagem para acessibilidade"  width="800"/>
+  <img  src="img/Figure_1.png" alt="Descrição da imagem para acessibilidade"  width="800"/>
 </p> 
 A análise evidencia que:
 

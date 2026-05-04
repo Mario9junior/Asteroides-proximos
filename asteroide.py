@@ -14,3 +14,14 @@ for date, asteroids in data_frame_aste["near_earth_objects"].items():
     for asteroid in asteroids:
         print(f" - {asteroid['name']}: \n")
         print(f" - {asteroid['is_potentially_hazardous_asteroid']}")
+
+for date,objeto_planet in data_frame_aste['near_earth_objects'].items():
+    for asteroide in objeto_planet:
+        for close_approach in asteroide['close_approach_data']:
+            print(f" - {close_approach['orbiting_body']} \n")
+      
+ 
+
+
+     
+           

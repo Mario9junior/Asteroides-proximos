@@ -1,5 +1,6 @@
 
 import requests
+import pandas as pd
 
 key_url = "1VMOiac1Qv0903cFqKB2xiID5zRmmZvl0sX4PJY9"
 data_from = "2020-09-07"
@@ -13,7 +14,6 @@ nome_asteroide = []
 potencialmente_perigoso =  []
 corpo_orbitando = []
 
-
 for date, asteroids in data_frame_aste["near_earth_objects"].items():
     for asteroid in asteroids:
        nome_asteroide.append(asteroid['name'])
@@ -22,10 +22,16 @@ for date, asteroids in data_frame_aste["near_earth_objects"].items():
 for date,objeto_planet in data_frame_aste['near_earth_objects'].items():
     for asteroide in objeto_planet:
         for close_approach in asteroide['close_approach_data']:
-             corpo_orbitando = {close_approach['orbiting_body']}
-      
-print(f"O nome do asteroide : {nome_asteroide}")
-print(f"O asteroide é potencialmente perigoso :{potencialmente_perigoso}")
-print(f"O corpo que o asteroide está orbitando é: {corpo_orbitando}")
-     
+             corpo_orbitando.append(close_approach['orbiting_body'])
+
+# criando data set com os dados coletados
+ 
+dados = {
+    'nome do asteroide': nome_asteroide,
+    'potencialmente perigoso': potencialmente_perigoso,
+    'corpo orbitando': corpo_orbitando
+ }
+df = pd.DataFrame(dados)
+print(df)
+
            
